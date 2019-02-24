@@ -235,7 +235,8 @@ impl cursive::view::View for LifeView {
                             let pos = smeagol::Position::new(x_offset, y_offset);
                             let a = if life.contains_alive_cells(smeagol::BoundingBox::new(
                                 pos.offset(0, 0),
-                                pos.offset(0, 0).offset(zoom_factor_minus_1, zoom_factor_minus_1),
+                                pos.offset(0, 0)
+                                    .offset(zoom_factor_minus_1, zoom_factor_minus_1),
                             )) {
                                 1
                             } else {
@@ -243,7 +244,8 @@ impl cursive::view::View for LifeView {
                             };
                             let b = if life.contains_alive_cells(smeagol::BoundingBox::new(
                                 pos.offset(zoom_factor, 0),
-                                pos.offset(zoom_factor, 0).offset(zoom_factor_minus_1, zoom_factor_minus_1),
+                                pos.offset(zoom_factor, 0)
+                                    .offset(zoom_factor_minus_1, zoom_factor_minus_1),
                             )) {
                                 1
                             } else {
@@ -251,7 +253,8 @@ impl cursive::view::View for LifeView {
                             };
                             let c = if life.contains_alive_cells(smeagol::BoundingBox::new(
                                 pos.offset(0, zoom_factor),
-                                pos.offset(0, zoom_factor).offset(zoom_factor_minus_1, zoom_factor_minus_1),
+                                pos.offset(0, zoom_factor)
+                                    .offset(zoom_factor_minus_1, zoom_factor_minus_1),
                             )) {
                                 1
                             } else {
@@ -259,7 +262,8 @@ impl cursive::view::View for LifeView {
                             };
                             let d = if life.contains_alive_cells(smeagol::BoundingBox::new(
                                 pos.offset(zoom_factor, zoom_factor),
-                                pos.offset(zoom_factor, zoom_factor).offset(zoom_factor_minus_1, zoom_factor_minus_1),
+                                pos.offset(zoom_factor, zoom_factor)
+                                    .offset(zoom_factor_minus_1, zoom_factor_minus_1),
                             )) {
                                 1
                             } else {
@@ -267,7 +271,8 @@ impl cursive::view::View for LifeView {
                             };
                             let e = if life.contains_alive_cells(smeagol::BoundingBox::new(
                                 pos.offset(0, 2 * zoom_factor),
-                                pos.offset(0, 2 * zoom_factor).offset(zoom_factor_minus_1, zoom_factor_minus_1),
+                                pos.offset(0, 2 * zoom_factor)
+                                    .offset(zoom_factor_minus_1, zoom_factor_minus_1),
                             )) {
                                 1
                             } else {
@@ -275,7 +280,8 @@ impl cursive::view::View for LifeView {
                             };
                             let f = if life.contains_alive_cells(smeagol::BoundingBox::new(
                                 pos.offset(zoom_factor, 2 * zoom_factor),
-                                pos.offset(zoom_factor, 2 * zoom_factor).offset(zoom_factor_minus_1, zoom_factor_minus_1),
+                                pos.offset(zoom_factor, 2 * zoom_factor)
+                                    .offset(zoom_factor_minus_1, zoom_factor_minus_1),
                             )) {
                                 1
                             } else {
@@ -283,7 +289,8 @@ impl cursive::view::View for LifeView {
                             };
                             let g = if life.contains_alive_cells(smeagol::BoundingBox::new(
                                 pos.offset(0, 3 * zoom_factor),
-                                pos.offset(0, 3 * zoom_factor).offset(zoom_factor_minus_1, zoom_factor_minus_1),
+                                pos.offset(0, 3 * zoom_factor)
+                                    .offset(zoom_factor_minus_1, zoom_factor_minus_1),
                             )) {
                                 1
                             } else {
@@ -291,7 +298,8 @@ impl cursive::view::View for LifeView {
                             };
                             let h = if life.contains_alive_cells(smeagol::BoundingBox::new(
                                 pos.offset(zoom_factor, 3 * zoom_factor),
-                                pos.offset(zoom_factor, 3 * zoom_factor).offset(zoom_factor_minus_1, zoom_factor_minus_1),
+                                pos.offset(zoom_factor, 3 * zoom_factor)
+                                    .offset(zoom_factor_minus_1, zoom_factor_minus_1),
                             )) {
                                 1
                             } else {

@@ -1,21 +1,19 @@
 [package]
-name = "smeagol-cli"
+name = "goliard"
 version = "0.1.0"
 authors = ["Billy Rieger <wrieger@protonmail.com>"]
+description = "Command-line viewer for patterns in Conway's Game of Life "
 edition = "2018"
 
 [dependencies]
 braille = "1.0"
 clap = "2.32"
 cursive = "0.10"
+failure = "0.1"
 itertools = "0.8"
 lazy_static = "1.2"
-smeagol = {path = "../smeagol"}
+smeagol = { path = "../smeagol" }
 term_size = "0.3"
 
-[dev-dependencies]
-assert_cmd = "0.11"
-
-[[bin]]
-name = "smeagol"
-path = "src/main.rs"
+[patch.crates-io]
+ncurses = { git = "https://github.com/simmons/ncurses-rs" }
