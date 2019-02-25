@@ -5,6 +5,7 @@
 ## Installation
 
 ```
+git clone https://github.com/billyrieger/smeagol
 git clone https://github.com/billyrieger/goliard
 cd goliard
 cargo install --path . --force
