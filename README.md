@@ -1,17 +1,19 @@
-# smeagol-cli
+# goliard
 
 ![screenshot](./screenshot.gif)
 
 ## Installation
 
 ```
-cargo install smeagol-cli
+git clone https://github.com/billyrieger/goliard
+cd goliard
+cargo install --path . --force
 ```
 
 ## Usage
 
 ```
-smeagol <file>
+goliard <file>
 ```
 
 To see a list of available key commands, press `?`.
