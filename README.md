@@ -1,7 +1,6 @@
 # goliard
 
 [![Build status](https://img.shields.io/travis/com/billyrieger/goliard.svg)](https://travis-ci.com/billyrieger/smeagol)
-[![Coverage](https://img.shields.io/codecov/c/github/billyrieger/goliard.svg)](https://codecov.io/gh/billyrieger/smeagol/branch/master)
 [![Lines of code](https://tokei.rs/b1/github/billyrieger/goliard)](https://github.com/Aaronepower/tokei)
 [![Version](https://img.shields.io/crates/v/goliard.svg)](https://crates.io/crates/goliard)
 [![License](https://img.shields.io/crates/l/goliard.svg)](https://github.com/billyrieger/goliard/blob/master/LICENSE)
