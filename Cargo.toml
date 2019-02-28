@@ -2,7 +2,12 @@
 name = "goliard"
 version = "0.1.0"
 authors = ["Billy Rieger <wrieger@protonmail.com>"]
-description = "Command-line viewer for patterns in Conway's Game of Life "
+description = "Command-line viewer for patterns in Conway's Game of Life"
+repository = "https://github.com/billyrieger/goliard"
+readme = "README.md"
+keywords = ["life", "conway", "cellular", "automaton", "hashlife"]
+categories = ["algorithms", "command-line-utilities", "science", "simulation"]
+license = "MPL-2.0"
 edition = "2018"
 
 [dependencies]

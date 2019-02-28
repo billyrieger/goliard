@@ -1,14 +1,15 @@
 # goliard
 
+`goliard` is a command-line viewer for patterns in Conway's Game of Life. It's powered by
+[`smeagol`](https://github.com/billyrieger/smeagol), which uses HashLife and SIMD to efficiently
+evolve repetitive patterns.
+
 ![screenshot](./screenshot.gif)
 
 ## Installation
 
 ```
-git clone https://github.com/billyrieger/smeagol
-git clone https://github.com/billyrieger/goliard
-cd goliard
-cargo install --path . --force
+cargo install goliard --force
 ```
 
 ## Quick start
