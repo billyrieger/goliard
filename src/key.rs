@@ -87,7 +87,7 @@ lazy_static::lazy_static! {
                     KeyCommand::new(
                         vec![Key::Char(' ')],
                         Action::Step,
-                        "advance <step-size> generation"
+                        "advance <step-size> generations"
                     ),
                     KeyCommand::new(
                         vec![Key::Char('-')],
