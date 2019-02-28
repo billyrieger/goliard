@@ -86,13 +86,8 @@ lazy_static::lazy_static! {
                     ),
                     KeyCommand::new(
                         vec![Key::Char(' ')],
-                        Action::StepOneGeneration,
-                        "advance one generation"
-                    ),
-                    KeyCommand::new(
-                        vec![Key::Tab],
                         Action::Step,
-                        "advance <step> generations"
+                        "advance <step-size> generation"
                     ),
                     KeyCommand::new(
                         vec![Key::Char('-')],
@@ -201,7 +196,6 @@ pub enum Action {
     IncreaseScale,
     DecreaseScale,
     ToggleSimulation,
-    StepOneGeneration,
     Step,
     IncreaseDelay,
     DecreaseDelay,
@@ -283,7 +277,7 @@ fn pan_right_small(center: &Arc<Mutex<(i64, i64)>>, scale: &Arc<Mutex<u64>>) {
     center.0 += *scale.lock().unwrap() as i64;
 }
 
-fn step_one_generation(life: &Arc<Mutex<smeagol::Life>>) {
+fn step(life: &Arc<Mutex<smeagol::Life>>) {
     life.lock().unwrap().step();
 }
 
@@ -527,19 +521,11 @@ pub fn setup_key_commands(siv: &mut cursive::Cursive, state: &State) {
                             }),
                         );
                     }
-                    Action::StepOneGeneration => {
-                        siv.add_global_callback(
-                            key.into_event(),
-                            enclose!((state) move |_: &mut cursive::Cursive| {
-                                step_one_generation(&state.life)
-                            }),
-                        );
-                    }
                     Action::Step => {
                         siv.add_global_callback(
                             key.into_event(),
-                            enclose!(() move |_: &mut cursive::Cursive| {
-                                // step(&state.life, &state.step)
+                            enclose!((state) move |_: &mut cursive::Cursive| {
+                                step(&state.life)
                             }),
                         );
                     }
