@@ -1,5 +1,13 @@
 # goliard
 
+[![Build status](https://img.shields.io/travis/com/billyrieger/goliard.svg)](https://travis-ci.com/billyrieger/smeagol)
+[![Coverage](https://img.shields.io/codecov/c/github/billyrieger/goliard.svg)](https://codecov.io/gh/billyrieger/smeagol/branch/master)
+[![Lines of code](https://tokei.rs/b1/github/billyrieger/goliard)](https://github.com/Aaronepower/tokei)
+[![Version](https://img.shields.io/crates/v/goliard.svg)](https://crates.io/crates/goliard)
+[![License](https://img.shields.io/crates/l/goliard.svg)](https://github.com/billyrieger/goliard/blob/master/LICENSE)
+[![Dependency status](https://deps.rs/repo/github/billyrieger/goliard/status.svg)](https://deps.rs/repo/github/billyrieger/goliard)
+[![Rust version](https://img.shields.io/badge/rust-nightly-lightgrey.svg)](https://www.rust-lang.org/)
+
 `goliard` is a command-line viewer for patterns in Conway's Game of Life. It's powered by
 [`smeagol`](https://github.com/billyrieger/smeagol), which uses HashLife and SIMD to efficiently
 evolve repetitive patterns.
