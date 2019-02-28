@@ -11,8 +11,6 @@
 [`smeagol`](https://github.com/billyrieger/smeagol), which uses HashLife and SIMD to efficiently
 evolve repetitive patterns.
 
-![screenshot](./screenshot.gif)
-
 ## Installation
 
 ```
