@@ -40,3 +40,9 @@ ARGS:
 ```
 
 To see a list of available key commands, press `?`.
+
+## License
+
+`goliard` is licensed under the Mozilla Public License version 2.0. See the [license
+file](https://github.com/billyrieger/goliard/blob/master/LICENSE) and the [MPL 2.0
+FAQ](https://www.mozilla.org/en-US/MPL/2.0/FAQ/) for more details.
