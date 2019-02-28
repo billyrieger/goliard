@@ -14,7 +14,7 @@ evolve repetitive patterns.
 ## Installation
 
 ```
-cargo install goliard --force
+cargo +nightly install goliard --force
 ```
 
 ## Quick start
