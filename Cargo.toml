@@ -13,7 +13,7 @@ edition = "2018"
 [dependencies]
 braille = "1.0"
 clap = "2.32"
-cursive = "0.10"
+cursive = "0.11"
 failure = "0.1"
 itertools = "0.8"
 lazy_static = "1.2"
